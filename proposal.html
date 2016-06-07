@@ -1,68 +1,112 @@
-<!doctype html>
-<html lang="">
-<head>
-   <meta charset="utf-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/styles.css">
-   <title>Yes Roofin Construction, Corp</title>
-</head>
-<body>
-<div id="header">
-    <div id="logo">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FAQS</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script><!--[if lt IE 9]>
+    <html class="lt-ie9">
+      <div style="clear: both; text-align:center; position: relative;"><a href="http://windows.microsoft.com/en-US/internet-explorer/.."><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    </html>
+    <script src="js/html5shiv.js"></script><![endif]-->
+    <script src="js/device.min.js"></script>
+  </head>
+  <body>
+    <div class="page">
+      <!--
+      ========================================================
+                    HEADER
+      ========================================================
 
+
+      -->
+      <header>
+        <div class="container">
+          <div class="brand">
+            <h1 class="brand_name"><a href="./">Business</a></h1>
+            <p class="brand_slogan">Company</p>
+          </div><a href="callto:#" class="fa-phone">800-2345-6789</a>
+          <p>One of our representatives will happily contact you within 24 hours. For urgent needs call us at</p>
+        </div>
+        <div id="stuck_container" class="stuck_container">
+          <div class="container">
+            <nav class="nav">
+              <ul data-type="navbar" class="sf-menu">
+                <li><a href="./">Home</a>
+                </li>
+                <li><a href="index-1.html">About</a>
+                  <ul>
+                    <li><a href="#">Lorem ipsum dolor</a></li>
+                    <li><a href="#">Conse ctetur adipisicing</a></li>
+                    <li><a href="#">Elit sed do eiusmod
+                        <ul>
+                          <li><a href="#">Lorem ipsum</a></li>
+                          <li><a href="#">Conse adipisicing</a></li>
+                          <li><a href="#">Sit amet dolore</a></li>
+                        </ul></a></li>
+                    <li><a href="#">Incididunt ut labore</a></li>
+                    <li><a href="#">Et dolore magna</a></li>
+                    <li><a href="#">Ut enim ad minim</a></li>
+                  </ul>
+                </li>
+                <li><a href="index-2.html">Services</a>
+                </li>
+                <li class="active"><a href="index-3.html">FAQS</a>
+                </li>
+                <li><a href="index-4.html">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!--
+      ========================================================
+                                  CONTENT
+      ========================================================
+      -->
+      <main>
+        <section class="well1">
+          <div class="container">
+            <h2>Proposal</h2>
+            <p>Phasellus ullamcorper elementum est, id pretium turpis bibendum vel. Aliquam a odio arcu. Morbi a dignissim nisl? Aenean aliquet magna in nulla congue vehicula. Morbi dignissim tristique turpis sed sodales. In tincidunt dapibus semper. Nullam non orci eu massa tempus aliquam! Quisque placerat metus at neque aliquam sit amet iaculis lacus iaculis. Etiam ultrices condimentum justo eu viverra. Curabitur lacinia tristique imperdiet. Aenean bibendum vehicula diam nec placerat. Donec lectus leo, consequat sit amet viverra et.</p>
+            <hr>
+
+            <embed id="proposal" type="application/pdf" src="rody-proposal-editable.pdf" id="pdfDocument" width="100%" height="1600px"></embed>
+
+          </div>
+        </section>
+
+      </main>
+      <!--
+      ========================================================
+                                  FOOTER
+      ========================================================
+      -->
+      <footer>
+        <section>
+          <div class="container">
+            <div class="copyright">Business Company © <span id="copyright-year"></span>.&nbsp;&nbsp;<a href="index-5.html">Privacy Policy</a>
+            </div>
+          </div>
+        </section>
+      </footer>
     </div>
-</div>
+    <script src="js/script.js"></script>
 
-<div id="cssmenu">
-    <ul>
-       <li><a href="#">Home</a></li>
-       <li class="active"><a href="#">Products</a>
-          <ul>
-             <li><a href="#">Product 1</a>
-                <ul>
-                   <li><a href="#">Sub Product</a></li>
-                   <li><a href="#">Sub Product</a></li>
-                </ul>
-             </li>
-             <li><a href="#">Product 2</a>
-                <ul>
-                   <li><a href="#">Sub Product</a></li>
-                   <li><a href="#">Sub Product</a></li>
-                </ul>
-             </li>
-          </ul>
-       </li>
-       <li><a href="#">About</a></li>
-       <li><a href="#">Contact</a></li>
-    </ul>
-</div>
+    <script type="text/javascript">
+      function getHeight() {
+          var proposal = document.getElementById('proposal');
+          if ((proposal !== null) && (window.navigator.userAgent.indexOf('MSIE') > -1)) {
+              proposal.height =  '2400px';
+          }
+      }
+      getHeight();
+    </script>
 
-<div id="content">
-    <div>
-        <embed id="proposal" type="application/pdf" src="rody-proposal-editable.pdf" id="pdfDocument" width="100%" height="1600px">
-        </embed>
-    </div>
-</div>
-
-<div id="footer">
-    Lorem ipsum lorem ipsum lorem ipsum
-</div>
-
-<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-<script src="script.js"></script>
-
-<script type="text/javascript">
-    function getHeight() {
-        var proposal = document.getElementById('proposal');
-        if ((proposal !== null) && (window.navigator.userAgent.indexOf('MSIE') > -1)) {
-            proposal.height =  '2400px';
-        }
-    }
-
-    getHeight();
-</script>
-
-</body>
+  </body>
 </html>
